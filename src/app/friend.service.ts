@@ -7,7 +7,6 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 import { MessageService } from './message.service';
 import { Friend } from './friend';
-import { FRIENDS} from './mock-friends';
 
 @Injectable({
   providedIn: 'root'
