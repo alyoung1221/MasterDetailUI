@@ -1,0 +1,20 @@
+<h2>My Friends</h2>
+<div>
+    <label class="light-bold">Friend name:&nbsp;
+      <input #friendName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    &nbsp;<button (click)="add(friendName.value); friendName.value=''">Add</button>
+  </div>
+<br>
+<div>
+    <ul class="friends">
+        <li *ngFor="let friend of friends">
+            <a routerLink="/friend/{{friend.id}}">
+                <span class="badge">{{friend.id}}</span> <span class="light-bold">{{friend.name}}</span>
+            </a>
+            <button class="delete" title="Delete friend"
+            (click)="delete(friend)">&times;</button>
+        </li>
+    </ul>  
+</div>

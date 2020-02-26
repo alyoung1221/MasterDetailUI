@@ -1,0 +1,14 @@
+<div *ngIf="friend" class="flex-container">
+    <img src="{{friend.img}}" alt="{{friend.name}}" class="profile">
+    <div class="details">
+        <h2>{{friend.name}}, {{friend.age}}</h2>
+        <p>{{friend.description}}</p>
+        <h4 class="light-bold">Interests</h4>
+        <ul>
+            <li *ngFor="let interest of friend.interests">
+            {{interest}}
+            </li>
+        </ul>  
+    </div>  
+</div>
+<button (click)="goBack()">Go Back</button>

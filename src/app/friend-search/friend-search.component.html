@@ -1,0 +1,8 @@
+<div id="search-component">
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" placeholder="Search. . .">
+    <div *ngFor="let friend of friends$ | async">
+      <br>
+      <h3><a routerLink="/friend/{{friend.id}}">{{friend.name}}</a></h3>
+      <img src="{{friend.img}}" alt="" class="profile">
+    </div>
+</div>

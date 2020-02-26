@@ -1,0 +1,26 @@
+<div class="body-container">
+    <header class="flex-container">
+        <div>
+            <h1>{{title}}</h1>
+            <nav>
+                <a routerLink="/dashboard">Profile</a>
+                <a routerLink="/my-friends">My Friends</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <app-friend-search></app-friend-search>
+        <router-outlet></router-outlet>          
+    </main>
+</div>
+<br><br>
+<footer>
+    <div class="flex-container">
+        <div>
+            <a href="about.html">About</a>
+            <a href="support.html">Support</a>
+            <a href="terms-of-use.html">Terms of Use</a>
+        </div>
+        <p>&copy;<span id="date"></span>&nbsp;Lapis</p>
+    </div>
+</footer>

@@ -1,0 +1,14 @@
+<div class="flex-container">
+    <img src="../assets/images/female.jpg" alt="Samantha Jones" class="profile">
+    <div class="details">
+        <h4 class="light-bold">sjones27</h4>
+        <p>Member since February 2020</p>
+        <p>{{user.description}}</p>
+        <p>Interests</p>
+        <ul>
+            <li *ngFor="let interest of user.interests">
+                {{interest}}
+            </li>
+        </ul>
+    </div> 
+</div>

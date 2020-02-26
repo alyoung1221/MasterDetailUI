@@ -1,0 +1,33 @@
+/* AppComponent's private CSS styles */
+  h2 {
+    font-size: 2em;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  nav {
+    background-color: #eee;
+    border-radius: 4px;
+    height: 100vh;
+    width: 200px;
+    margin-right: 100px;
+  }
+  nav a {
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #000;
+  }
+  nav a:visited, a:link {
+    color: #334953;
+  }
+  nav a:hover {
+    color: #FFF;
+    background-color: #cfd8dc;
+  }
+  nav a.active {
+    color: #039be5;
+  }
+  .flex-container > section {
+    width: 70%;
+  }
